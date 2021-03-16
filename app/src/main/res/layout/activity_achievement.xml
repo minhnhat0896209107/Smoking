@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/bacground_home"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -9,19 +9,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageView
+            android:src="@drawable/back"
             android:id="@+id/img_backachive"
             android:layout_margin="20dp"
-            android:src="@drawable/back1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"/>
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="20dp"
             android:text="Achievement"
             android:textColor="@color/white"
-            android:textSize="37sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -39,7 +39,7 @@
             <TextView
                 android:layout_weight="1"
                 android:textSize="15sp"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/yellow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Target\nname"/>
@@ -51,15 +51,14 @@
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:text="Start date"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/yellow"
                 android:textSize="15sp" />
 
             <TextView
                 android:layout_weight="1"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
+
                 android:textSize="15sp"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/yellow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="End date"/>
@@ -67,19 +66,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
+
                 android:layout_weight="1"
                 android:text="Target"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/yellow"
                 android:textSize="15sp" />
 
             <TextView
                 android:layout_weight="1"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
+
                 android:textSize="15sp"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/yellow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Used"/>
@@ -99,50 +96,45 @@
             android:layout_height="match_parent">
             <TextView
                 android:layout_weight="1"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2 Week"/>
 
             <TextView
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
                 android:text="21/07/2000"
                 android:textColor="@color/white"
-                android:textSize="17sp" />
-
+                android:gravity="left"
+                android:textSize="15sp"/>
             <TextView
-                android:layout_width="105dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:text="21/07/2021"
                 android:textColor="@color/white"
-                android:textSize="17sp" />
+                android:textSize="15sp"
+                android:gravity="left"/>
             <TextView
                 android:layout_weight="1"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="30"/>
+                android:text="30"
+                android:gravity="left"/>
+
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:textSize="17sp"
                 android:gravity="center"
-                android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2"/>
+                android:text="2"
+                android:textColor="#12A118"
+                android:textSize="15sp" />
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

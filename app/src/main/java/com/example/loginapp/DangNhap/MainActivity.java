@@ -1,27 +1,30 @@
-package com.example.loginapp;
+package com.example.loginapp.DangNhap;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.loginapp.Home.HomeActivity;
+import com.example.loginapp.R;
 
 public class MainActivity extends AppCompatActivity {
-    TextView tvforgot;
-    Button btndangky, btnDangNhap;
+    TextView tvforgot, tvdangky;
+    Button  btnDangNhap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         tvforgot = findViewById(R.id.tv_forgot);
-        btndangky = findViewById(R.id.btn_dangky);
+        tvdangky = findViewById(R.id.tv_dangky);
         btnDangNhap = findViewById(R.id.btn_dangnhap);
 
-        btndangky.setOnClickListener(new View.OnClickListener() {
+        tvdangky.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i= new Intent(MainActivity.this, SignUp.class);
@@ -41,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
+                Toast.makeText(MainActivity.this, "Sign In successfully", Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -1,4 +1,4 @@
-package com.example.loginapp;
+package com.example.loginapp.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.loginapp.R;
 
 public class Chat extends AppCompatActivity {
     ImageView imgBack;
