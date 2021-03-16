@@ -1,4 +1,4 @@
-package com.example.loginapp;
+package com.example.loginapp.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,18 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Profile extends AppCompatActivity {
+import com.example.loginapp.R;
+
+public class Achievement extends AppCompatActivity {
     ImageView imgBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_achievement);
 
-        imgBack = findViewById(R.id.img_backprofile);
+        imgBack = findViewById(R.id.img_backachive);
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Profile.this, HomeActivity.class);
+                Intent intent = new Intent(Achievement.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

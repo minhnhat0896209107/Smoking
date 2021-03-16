@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/bacground_home"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -9,26 +9,27 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <ImageView
+            android:src="@drawable/back"
             android:id="@+id/img_backchat"
             android:layout_margin="20dp"
-            android:src="@drawable/back1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"/>
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
         <TextView
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:layout_margin="20dp"
-            android:textSize="40sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chat"/>
+            android:layout_margin="20dp"
+            android:text="Chat"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </LinearLayout>
     <TextView
         android:layout_margin="10dp"
         android:padding="10dp"
         android:textSize="20sp"
         android:layout_gravity="center|end"
-        android:background="@drawable/bogoc_nenxamdam"
+        android:background="@drawable/bogoc_dennhatnen"
         android:textColor="@color/white"
         android:text="Abcxyz\n55:16 27/02"
         android:layout_width="wrap_content"
@@ -37,10 +38,35 @@
         android:padding="10dp"
         android:textSize="20sp"
         android:layout_margin="10dp"
-        android:background="@drawable/bogoc_nenxamdam"
+        android:background="@drawable/bogoc_nenxam"
         android:textColor="@color/white"
         android:text="Abcxyz\n55:16 27/02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:text="Type message.."
+            android:background="@drawable/bogoc_dennhatnen"
+            android:textColor="@color/white" />
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_send"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/send"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
 </LinearLayout>

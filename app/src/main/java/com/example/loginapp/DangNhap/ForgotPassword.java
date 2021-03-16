@@ -1,4 +1,4 @@
-package com.example.loginapp;
+package com.example.loginapp.DangNhap;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.loginapp.R;
 
 public class ForgotPassword extends AppCompatActivity {
     Button btnback;
@@ -19,7 +21,7 @@ public class ForgotPassword extends AppCompatActivity {
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ForgotPassword.this,MainActivity.class);
+                Intent i = new Intent(ForgotPassword.this, MainActivity.class);
                 startActivity(i);
             }
         });

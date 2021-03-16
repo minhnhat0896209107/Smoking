@@ -1,4 +1,4 @@
-package com.example.loginapp;
+package com.example.loginapp.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
+
+import com.example.loginapp.DangNhap.MainActivity;
+import com.example.loginapp.R;
 
 public class HomeActivity extends AppCompatActivity {
     Button btnbacktoSingin;

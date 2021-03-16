@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="5dp"
-    android:background="@drawable/anhnen"
-    tools:context=".MainActivity">
+    android:background="@drawable/bacground"
+    tools:context=".DangNhap.MainActivity">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -16,19 +16,19 @@
         <ImageView
             android:layout_marginStart="30dp"
             android:layout_gravity="center"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/smoking"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/no_smoking"
             android:layout_marginLeft="30dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="75dp"
             android:layout_marginStart="5dp"
             android:text="Sign Up"
             android:textColor="@color/white"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:layout_marginLeft="5dp" />
     </LinearLayout>
 
@@ -47,9 +47,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:text="username"
+        android:padding="25dp"
         android:backgroundTint="@color/white"
         android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:textSize="20sp" />
     <TextView
         android:text="EMAIL"
         android:textSize="20sp"
@@ -66,8 +67,9 @@
         android:layout_marginLeft="30dp"
         android:text="email"
         android:backgroundTint="@color/white"
+        android:padding="25dp"
         android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:textSize="20sp" />
     <TextView
         android:text="PASSWORD"
         android:textSize="20sp"
@@ -83,9 +85,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:text="password"
+        android:padding="25dp"
         android:backgroundTint="@color/white"
         android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:textSize="20sp" />
     <TextView
         android:text="PHONE NUMBER"
         android:textSize="20sp"
@@ -101,27 +104,29 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:text="phone number"
+        android:padding="25dp"
         android:backgroundTint="@color/white"
         android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:textSize="20sp" />
+
     <Button
-        android:layout_marginStart="10dp"
-        android:padding="5dp"
-        android:layout_marginEnd="10dp"
-        android:id="@+id/btn_dangky"
-        android:text="NEXT"
-        android:layout_marginTop="30dp"
-        android:textAllCaps="false"
-        android:background="@drawable/bogoc_vang"
+        android:layout_marginTop="2dp"
+        android:id="@+id/btn_dangkytc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bogoc_vang"
+        android:padding="5dp"
+        android:text="NEXT" />
+
     <TextView
         android:id="@+id/tv_haveAccount"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
         android:textSize="20sp"
         android:textColor="@color/white"
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account! Sign in?"/>
