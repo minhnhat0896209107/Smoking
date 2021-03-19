@@ -24,13 +24,13 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:padding="10dp"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="match_parent">
         <LinearLayout
             android:background="@drawable/bogoc_nenxamnhat"
             android:weightSum="5"
-            android:layout_margin="15dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -79,16 +79,10 @@
                 android:layout_height="wrap_content"
                 android:text="Used"/>
         </LinearLayout>
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_marginTop="-130dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
         <LinearLayout
             android:background="@drawable/bogoc_nenxamdam"
             android:weightSum="5"
-            android:layout_margin="14dp"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent">

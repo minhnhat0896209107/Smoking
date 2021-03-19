@@ -15,7 +15,6 @@
             android:layout_margin="15dp"
             android:layout_width="30dp"
             android:layout_height="30dp"/>
-
         <androidx.appcompat.widget.Toolbar
             app:title="Chat"
             app:titleTextColor="@color/white"
@@ -50,7 +49,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-
             android:padding="15dp"
             android:layout_centerVertical="true"
             android:text="Type message.."
